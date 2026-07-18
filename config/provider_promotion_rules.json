@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "providers": [
+    {
+      "id": "external-provider-dry-run",
+      "from_stage": "experimental",
+      "to_stage": "approved_candidate",
+      "required_candidate_mode": "external-provider-dry-run",
+      "min_pass_rate": 1.0,
+      "max_failed_cases": 0,
+      "max_unexpected_paths": 0,
+      "require_provider_gate_pass": true,
+      "require_dry_run": true,
+      "require_zero_network_calls": true
+    }
+  ]
+}

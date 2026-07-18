@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "python3 -m unittest discover -s tests",
+    "typecheck": "pyright scripts/strict_doc_audit.py scripts/context_package_generator.py scripts/graph_extractor.py scripts/embedding_provider_gate.py scripts/provider_promotion_gate.py tests/test_strict_doc_audit.py tests/test_context_package_generator.py tests/test_graph_extractor.py tests/test_embedding_provider_gate.py tests/test_provider_promotion_gate.py",
+    "validate": "npm run typecheck && npm test && python3 scripts/strict_doc_audit.py --format markdown --fail-on-issues"
+  },
+  "devDependencies": {
+    "pyright": "^1.1.410"
+  }
+}

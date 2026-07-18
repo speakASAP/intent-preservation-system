@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intent Preservation System</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.1 3.3 9.8 8 11 4.7-1.2 8-5.9 8-11V5l-8-3Zm0 3.2 5 1.9v3.8c0 3.4-2 6.7-5 7.9-3-1.2-5-4.5-5-7.9V7.1l5-1.9Z"/><path d="m10.9 13.6 4.4-5 1.5 1.3-5.7 6.5-3.8-3.8 1.4-1.4 2.2 2.4Z"/></svg>
+          </span>
+          <span>Intent<br>Preservation</span>
+        </div>
+        <nav class="nav-list" aria-label="Dashboard sections">
+          <button class="nav-item active" data-section="overview" type="button">
+            <svg viewBox="0 0 24 24"><path d="M4 11.2 12 4l8 7.2V20h-5v-5H9v5H4v-8.8Zm2 .9V18h1v-5h10v5h1v-5.9l-6-5.4-6 5.4Z"/></svg>
+            <span>Overview</span>
+          </button>
+          <button class="nav-item" data-section="traceability" type="button">
+            <svg viewBox="0 0 24 24"><path d="M7 7a3 3 0 0 1 3-3h4v2h-4a1 1 0 0 0-1 1v3h6a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-4v-2h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H9a3 3 0 0 1-3-3V7Z"/><path d="M3 8h4v2H3V8Zm14 6h4v2h-4v-2Z"/></svg>
+            <span>Traceability</span>
+          </button>
+          <button class="nav-item" data-section="retrieval" type="button">
+            <svg viewBox="0 0 24 24"><path d="M4 19h16v2H2V3h2v16Zm3-2V9h3v8H7Zm5 0V5h3v12h-3Zm5 0v-6h3v6h-3Z"/></svg>
+            <span>Retrieval Tests</span>
+          </button>
+          <button class="nav-item" data-section="providers" type="button">
+            <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.1 3.3 9.8 8 11 4.7-1.2 8-5.9 8-11V5l-8-3Zm0 3.2 5 1.9v3.8c0 3.4-2 6.7-5 7.9-3-1.2-5-4.5-5-7.9V7.1l5-1.9Z"/><path d="M8 10h8v2H8v-2Zm0 4h8v2H8v-2Z"/></svg>
+            <span>Providers</span>
+          </button>
+          <button class="nav-item" data-section="validation" type="button">
+            <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.1 3.3 9.8 8 11 4.7-1.2 8-5.9 8-11V5l-8-3Zm0 3.2 5 1.9v3.8c0 3.4-2 6.7-5 7.9-3-1.2-5-4.5-5-7.9V7.1l5-1.9Z"/></svg>
+            <span>Validation</span>
+          </button>
+        </nav>
+        <div class="sidebar-footer">
+          <span class="label">Project view</span>
+          <strong>IPS Repository</strong>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Manager dashboard</p>
+            <h1>Intent Preservation System</h1>
+            <p class="subtitle">See what is protected, what is traced, what was compared and which gates passed.</p>
+          </div>
+          <div class="topbar-actions" aria-label="Current project context">
+            <span class="date-chip">Jun 13, 2026</span>
+            <span class="status-chip">Local static view</span>
+          </div>
+        </header>
+
+        <section class="metrics" aria-label="Project status">
+          <article class="metric-card">
+            <span class="metric-icon green"><svg viewBox="0 0 24 24"><path d="m10.8 15.4 6-7 1.5 1.3-7.4 8.5-4.3-4.3L8 12.5l2.8 2.9Z"/></svg></span>
+            <div>
+              <h2>Vision protected</h2>
+              <strong>Immutable</strong>
+              <p>Vision and constitution remain read-only for agents.</p>
+            </div>
+          </article>
+          <article class="metric-card">
+            <span class="metric-icon teal"><svg viewBox="0 0 24 24"><path d="M7 7a3 3 0 0 1 3-3h4v2h-4a1 1 0 0 0-1 1v3h6a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-4v-2h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H9a3 3 0 0 1-3-3V7Z"/></svg></span>
+            <div>
+              <h2>Tasks traced</h2>
+              <strong>16</strong>
+              <p>Implementation tasks connect to upstream intent.</p>
+            </div>
+          </article>
+          <article class="metric-card">
+            <span class="metric-icon amber"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.1 3.3 9.8 8 11 4.7-1.2 8-5.9 8-11V5l-8-3Zm0 3.2 5 1.9v3.8c0 3.4-2 6.7-5 7.9-3-1.2-5-4.5-5-7.9V7.1l5-1.9Z"/></svg></span>
+            <div>
+              <h2>Gates passing</h2>
+              <strong>4 / 4</strong>
+              <p>Audit, tests, pre-coding and readiness checks pass.</p>
+            </div>
+          </article>
+          <article class="metric-card">
+            <span class="metric-icon blue"><svg viewBox="0 0 24 24"><path d="M4 19h16v2H2V3h2v16Zm3-2v-5h3v5H7Zm5 0V7h3v10h-3Zm5 0v-8h3v8h-3Z"/></svg></span>
+            <div>
+              <h2>Retrieval measured</h2>
+              <strong>Ready</strong>
+              <p>Candidate context is compared before adoption.</p>
+            </div>
+          </article>
+          <article class="metric-card">
+            <span class="metric-icon violet"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.1 3.3 9.8 8 11 4.7-1.2 8-5.9 8-11V5l-8-3Zm0 3.2 5 1.9v3.8c0 3.4-2 6.7-5 7.9-3-1.2-5-4.5-5-7.9V7.1l5-1.9Z"/><path d="m10.8 14.4 4.5-5.2 1.5 1.3-5.9 6.8-3.7-3.7 1.4-1.4 2.2 2.2Z"/></svg></span>
+            <div>
+              <h2>Provider promotion</h2>
+              <strong>Promotable</strong>
+              <p>Dry-run provider passed safety and promotion gates.</p>
+            </div>
+          </article>
+        </section>
+
+        <div class="main-grid">
+          <section class="panel trace-panel" id="traceability" data-panel>
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Traceability</p>
+                <h2>Intent trace chain</h2>
+              </div>
+              <span class="panel-note">The chain managers should expect every task to preserve.</span>
+            </div>
+            <div class="trace-chain" aria-label="Intent trace chain"></div>
+          </section>
+
+          <section class="panel readout-panel" id="overview" data-panel>
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Manager readout</p>
+                <h2>What this means</h2>
+              </div>
+            </div>
+            <div class="readout-list"></div>
+          </section>
+
+          <section class="panel comparison-panel" id="retrieval" data-panel>
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Comparison</p>
+                <h2>Retrieval candidate comparison</h2>
+              </div>
+              <div class="segmented" role="tablist" aria-label="Comparison mode">
+                <button class="segment active" data-mode="manager" type="button">Manager</button>
+                <button class="segment" data-mode="technical" type="button">Technical</button>
+              </div>
+            </div>
+            <div class="comparison-summary" aria-live="polite"></div>
+            <div class="comparison-visual" aria-label="Manager visual comparison"></div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Check</th>
+                    <th>Baseline</th>
+                    <th>Candidate</th>
+                    <th>Result</th>
+                    <th>Manager meaning</th>
+                  </tr>
+                </thead>
+                <tbody class="comparison-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel provider-panel" id="providers" data-panel>
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Providers</p>
+                <h2>Provider gate and promotion status</h2>
+              </div>
+              <span class="panel-note">Current safety and promotion evidence for optional retrieval providers.</span>
+            </div>
+            <div class="provider-status-body"></div>
+          </section>
+
+          <section class="panel validation-panel" id="validation" data-panel>
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Validation</p>
+                <h2>Evidence gates</h2>
+              </div>
+              <span class="panel-note">Static UI, repository checks and governance gates.</span>
+            </div>
+            <div class="gate-grid"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

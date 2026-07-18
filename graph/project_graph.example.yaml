@@ -1,0 +1,1365 @@
+nodes:
+  - id: VISION
+    type: Vision
+    path: ../docs/01_vision/VISION.md
+
+  - id: VE-2026-001
+    type: VisionEvolution
+    path: ../docs/01_vision/VISION_EVOLUTION.md#ve-2026-001
+
+  - id: GOAL-CONTEXT-PRESERVATION
+    type: Goal
+    path: ../docs/01_vision/VISION.md
+
+  - id: ADR-001
+    type: ADR
+    path: ../docs/07_decisions/ADR-001-use-markdown-and-git-as-source-of-truth.md
+
+  - id: ADR-002
+    type: ADR
+    path: ../docs/07_decisions/ADR-002-use-graph-retrieval-before-rag.md
+
+  - id: ADR-003
+    type: ADR
+    path: ../docs/07_decisions/ADR-003-protect-vision-and-constitution.md
+
+  - id: ADR-004
+    type: ADR
+    path: ../docs/07_decisions/ADR-004-generate-context-packages.md
+
+  - id: SYS-002
+    type: System
+    path: ../docs/04_systems/SYS-002-context-engine.md
+
+  - id: SYS-003
+    type: System
+    path: ../docs/04_systems/SYS-003-audit-engine.md
+
+  - id: FEAT-001
+    type: Feature
+    path: ../docs/10_features/FEAT-001-documentation-audit.md
+
+  - id: FEAT-002
+    type: Feature
+    path: ../docs/10_features/FEAT-002-context-package-generation.md
+
+  - id: FEAT-003
+    type: Feature
+    path: ../docs/10_features/FEAT-003-optional-rag-retrieval.md
+
+  - id: FEAT-004
+    type: Feature
+    path: ../docs/10_features/FEAT-004-manager-visibility.md
+
+  - id: MS-004
+    type: Milestone
+    path: ../docs/09_milestones/MS-004-knowledge-graph.md
+
+  - id: MS-005
+    type: Milestone
+    path: ../docs/09_milestones/MS-005-rag-integration.md
+
+  - id: TASK-001
+    type: Task
+    path: ../docs/11_tasks/TASK-001-create-required-document-audit-rules.md
+
+  - id: TASK-002
+    type: Task
+    path: ../docs/11_tasks/TASK-002-detect-missing-traceability-fields.md
+
+  - id: TASK-003
+    type: Task
+    path: ../docs/11_tasks/TASK-003-create-context-package-schema.md
+
+  - id: TASK-004
+    type: Task
+    path: ../docs/11_tasks/TASK-004-generate-coding-prompt-from-task-metadata.md
+
+  - id: TASK-005
+    type: Task
+    path: ../docs/11_tasks/TASK-005-propose-and-generate-missing-document-drafts.md
+
+  - id: TASK-006
+    type: Task
+    path: ../docs/11_tasks/TASK-006-generate-context-package-by-task-id.md
+
+  - id: TASK-007
+    type: Task
+    path: ../docs/11_tasks/TASK-007-extract-knowledge-graph-from-documents.md
+
+  - id: TASK-008
+    type: Task
+    path: ../docs/11_tasks/TASK-008-query-knowledge-graph-trace-paths.md
+
+  - id: TASK-009
+    type: Task
+    path: ../docs/11_tasks/TASK-009-detect-orphan-tasks-from-knowledge-graph.md
+
+  - id: TASK-010
+    type: Task
+    path: ../docs/11_tasks/TASK-010-generate-knowledge-graph-dependency-map.md
+
+  - id: TASK-011
+    type: Task
+    path: ../docs/11_tasks/TASK-011-define-optional-rag-retrieval-contract.md
+
+  - id: TASK-012
+    type: Task
+    path: ../docs/11_tasks/TASK-012-harden-optional-local-retrieval.md
+
+  - id: TASK-013
+    type: Task
+    path: ../docs/11_tasks/TASK-013-create-retrieval-evaluation-baseline.md
+
+  - id: TASK-014
+    type: Task
+    path: ../docs/11_tasks/TASK-014-compare-candidate-retrieval-results.md
+
+  - id: TASK-015
+    type: Task
+    path: ../docs/11_tasks/TASK-015-create-local-semantic-candidate-adapter.md
+
+  - id: TASK-016
+    type: Task
+    path: ../docs/11_tasks/TASK-016-create-manager-visibility-interface.md
+
+  - id: TASK-017
+    type: Task
+    path: ../docs/11_tasks/TASK-017-implement-local-embedding-index.md
+
+  - id: TASK-018
+    type: Task
+    path: ../docs/11_tasks/TASK-018-add-embedding-provider-adapter-boundary.md
+
+  - id: TASK-019
+    type: Task
+    path: ../docs/11_tasks/TASK-019-add-embedding-provider-safety-gates.md
+
+  - id: TASK-020
+    type: Task
+    path: ../docs/11_tasks/TASK-020-add-external-provider-dry-run-contract.md
+
+  - id: TASK-021
+    type: Task
+    path: ../docs/11_tasks/TASK-021-add-provider-promotion-thresholds.md
+
+  - id: TASK-022
+    type: Task
+    path: ../docs/11_tasks/TASK-022-surface-provider-status-in-manager-interface.md
+
+  - id: EP-TASK-001
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-001-example.md
+
+  - id: EP-TASK-002
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-002.md
+
+  - id: EP-TASK-003
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-003.md
+
+  - id: EP-TASK-004
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-004.md
+
+  - id: EP-TASK-005
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-005.md
+
+  - id: EP-TASK-006
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-006.md
+
+  - id: EP-TASK-007
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-007.md
+
+  - id: EP-TASK-008
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-008.md
+
+  - id: EP-TASK-009
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-009.md
+
+  - id: EP-TASK-010
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-010.md
+
+  - id: EP-TASK-011
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-011.md
+
+  - id: EP-TASK-012
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-012.md
+
+  - id: EP-TASK-013
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-013.md
+
+  - id: EP-TASK-014
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-014.md
+
+  - id: EP-TASK-015
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-015.md
+
+  - id: EP-TASK-016
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-016.md
+
+  - id: EP-TASK-017
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-017.md
+
+  - id: EP-TASK-018
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-018.md
+
+  - id: EP-TASK-019
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-019.md
+
+  - id: EP-TASK-020
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-020.md
+
+  - id: EP-TASK-021
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-021.md
+
+  - id: EP-TASK-022
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-TASK-022.md
+
+  - id: EP-CROSS-003
+    type: ExecutionPlan
+    path: ../docs/21_execution_plans/EP-CROSS-003-cross-reference-shared-principles.md
+
+  - id: CP-TASK-001-example
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-TASK-001-example.md
+
+  - id: CP-TASK-005-safe-draft-remediation
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-TASK-005-safe-draft-remediation.md
+
+  - id: CP-task-006
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-006.md
+
+  - id: CP-task-007
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-007.md
+
+  - id: CP-task-008
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-008.md
+
+  - id: CP-task-009
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-009.md
+
+  - id: CP-task-010
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-010.md
+
+  - id: CP-task-011
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-011.md
+
+  - id: CP-task-012
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-012.md
+
+  - id: CP-task-013
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-013.md
+
+  - id: CP-task-014
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-014.md
+
+  - id: CP-task-015
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-015.md
+
+  - id: CP-task-016
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-016.md
+
+  - id: CP-task-017
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-017.md
+
+  - id: CP-task-018
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-018.md
+
+  - id: CP-task-019
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-019.md
+
+  - id: CP-task-020
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-020.md
+
+  - id: CP-task-021
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-021.md
+
+  - id: CP-task-022
+    type: ContextPackage
+    path: ../docs/13_context_packages/CP-task-022.md
+
+  - id: PROMPT-TASK-001-example
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-001-example.md
+
+  - id: PROMPT-TASK-004-coding-prompt-generation
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-004-coding-prompt-generation.md
+
+  - id: PROMPT-TASK-005-safe-draft-remediation
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-005-safe-draft-remediation.md
+
+  - id: PROMPT-TASK-006-context-package-generator
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-006-context-package-generator.md
+
+  - id: PROMPT-TASK-007-knowledge-graph-extraction
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-007-knowledge-graph-extraction.md
+
+  - id: PROMPT-TASK-008-knowledge-graph-trace-paths
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-008-knowledge-graph-trace-paths.md
+
+  - id: PROMPT-TASK-009-orphan-task-detection
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-009-orphan-task-detection.md
+
+  - id: PROMPT-TASK-010-dependency-map-generation
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-010-dependency-map-generation.md
+
+  - id: PROMPT-TASK-011-optional-rag-retrieval-contract
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-011-optional-rag-retrieval-contract.md
+
+  - id: PROMPT-TASK-012-harden-optional-local-retrieval
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-012-harden-optional-local-retrieval.md
+
+  - id: PROMPT-TASK-013-retrieval-evaluation-baseline
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-013-retrieval-evaluation-baseline.md
+
+  - id: PROMPT-TASK-014-candidate-retrieval-comparison
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-014-candidate-retrieval-comparison.md
+
+  - id: PROMPT-TASK-015-local-semantic-candidate-adapter
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-015-local-semantic-candidate-adapter.md
+
+  - id: PROMPT-TASK-016-manager-visibility-interface
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-016-manager-visibility-interface.md
+
+  - id: PROMPT-TASK-017-local-embedding-index
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-017-local-embedding-index.md
+
+  - id: PROMPT-TASK-018-embedding-provider-adapter-boundary
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-018-embedding-provider-adapter-boundary.md
+
+  - id: PROMPT-TASK-019-embedding-provider-safety-gates
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-019-embedding-provider-safety-gates.md
+
+  - id: PROMPT-TASK-020-external-provider-dry-run-contract
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-020-external-provider-dry-run-contract.md
+
+  - id: PROMPT-TASK-021-provider-promotion-thresholds
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-021-provider-promotion-thresholds.md
+
+  - id: PROMPT-TASK-022-provider-status-manager-interface
+    type: CodingPrompt
+    path: ../docs/14_prompts/PROMPT-TASK-022-provider-status-manager-interface.md
+
+  - id: VAL-TASK-001-required-document-audit-rules
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-001-required-document-audit-rules.md
+
+  - id: VAL-TASK-002-traceability-checks
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-002-traceability-checks.md
+
+  - id: VAL-TASK-003-context-package-schema
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-003-context-package-schema.md
+
+  - id: VAL-TASK-004-coding-prompt-generation
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-004-coding-prompt-generation.md
+
+  - id: VAL-TASK-005-safe-draft-remediation
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-005-safe-draft-remediation.md
+
+  - id: VAL-TASK-006-context-package-generator
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-006-context-package-generator.md
+
+  - id: VAL-TASK-007-knowledge-graph-extraction
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-007-knowledge-graph-extraction.md
+
+  - id: VAL-TASK-008-knowledge-graph-trace-paths
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-008-knowledge-graph-trace-paths.md
+
+  - id: VAL-TASK-009-orphan-task-detection
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-009-orphan-task-detection.md
+
+  - id: VAL-TASK-010-dependency-map-generation
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-010-dependency-map-generation.md
+
+  - id: VAL-TASK-011-optional-rag-retrieval-contract
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-011-optional-rag-retrieval-contract.md
+
+  - id: VAL-TASK-012-harden-optional-local-retrieval
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-012-harden-optional-local-retrieval.md
+
+  - id: VAL-TASK-013-retrieval-evaluation-baseline
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-013-retrieval-evaluation-baseline.md
+
+  - id: VAL-TASK-014-candidate-retrieval-comparison
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-014-candidate-retrieval-comparison.md
+
+  - id: VAL-TASK-015-local-semantic-candidate-adapter
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-015-local-semantic-candidate-adapter.md
+
+  - id: VAL-TASK-016-manager-visibility-interface
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-016-manager-visibility-interface.md
+
+  - id: VAL-TASK-017-local-embedding-index
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-017-local-embedding-index.md
+
+  - id: VAL-TASK-018-embedding-provider-adapter-boundary
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-018-embedding-provider-adapter-boundary.md
+
+  - id: VAL-TASK-019-embedding-provider-safety-gates
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-019-embedding-provider-safety-gates.md
+
+  - id: VAL-TASK-020-external-provider-dry-run-contract
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-020-external-provider-dry-run-contract.md
+
+  - id: VAL-TASK-021-provider-promotion-thresholds
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-021-provider-promotion-thresholds.md
+
+  - id: VAL-TASK-022-provider-status-manager-interface
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-TASK-022-provider-status-manager-interface.md
+
+  - id: VAL-CROSS-REPO-DOS-ALIGNMENT
+    type: ValidationReport
+    path: ../docs/12_validation/VAL-CROSS-REPO-DOS-ALIGNMENT.md
+
+  - id: VISION-SUMMARY
+    type: SemanticSummary
+    path: ../docs/20_semantic_compression/summaries/VISION.summary.md
+
+edges:
+  - from: VE-2026-001
+    type: evolves
+    to: VISION
+
+  - from: SYS-002
+    type: implements
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: SYS-003
+    type: implements
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: FEAT-001
+    type: implements
+    to: SYS-003
+
+  - from: FEAT-002
+    type: implements
+    to: SYS-002
+
+  - from: FEAT-003
+    type: implements
+    to: SYS-002
+
+  - from: FEAT-004
+    type: implements
+    to: SYS-002
+
+  - from: MS-004
+    type: implements
+    to: SYS-002
+
+  - from: MS-005
+    type: implements
+    to: SYS-002
+
+  - from: TASK-001
+    type: implements
+    to: FEAT-001
+
+  - from: TASK-001
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-002
+    type: implements
+    to: FEAT-001
+
+  - from: TASK-002
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-003
+    type: implements
+    to: FEAT-002
+
+  - from: TASK-003
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-004
+    type: implements
+    to: FEAT-002
+
+  - from: TASK-004
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-005
+    type: implements
+    to: FEAT-001
+
+  - from: TASK-005
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-006
+    type: implements
+    to: FEAT-002
+
+  - from: TASK-006
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-007
+    type: implements
+    to: MS-004
+
+  - from: TASK-007
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-008
+    type: implements
+    to: MS-004
+
+  - from: TASK-008
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-009
+    type: implements
+    to: MS-004
+
+  - from: TASK-009
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-009
+    type: decomposes_into
+    to: EP-TASK-009
+
+  - from: TASK-010
+    type: implements
+    to: MS-004
+
+  - from: TASK-010
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-010
+    type: decomposes_into
+    to: EP-TASK-010
+
+  - from: TASK-011
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-011
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-011
+    type: decomposes_into
+    to: EP-TASK-011
+
+  - from: TASK-012
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-012
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-012
+    type: decomposes_into
+    to: EP-TASK-012
+
+  - from: TASK-013
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-013
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-013
+    type: decomposes_into
+    to: EP-TASK-013
+
+  - from: TASK-014
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-014
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-014
+    type: decomposes_into
+    to: EP-TASK-014
+
+  - from: TASK-015
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-015
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-015
+    type: decomposes_into
+    to: EP-TASK-015
+
+  - from: TASK-016
+    type: implements
+    to: FEAT-004
+
+  - from: TASK-016
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-016
+    type: decomposes_into
+    to: EP-TASK-016
+
+  - from: TASK-017
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-017
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-017
+    type: decomposes_into
+    to: EP-TASK-017
+
+  - from: TASK-018
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-018
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-018
+    type: decomposes_into
+    to: EP-TASK-018
+
+  - from: TASK-019
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-019
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-019
+    type: decomposes_into
+    to: EP-TASK-019
+
+  - from: TASK-020
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-020
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-020
+    type: decomposes_into
+    to: EP-TASK-020
+
+  - from: TASK-021
+    type: implements
+    to: FEAT-003
+
+  - from: TASK-021
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-021
+    type: decomposes_into
+    to: EP-TASK-021
+
+  - from: TASK-022
+    type: impacts_goal
+    to: GOAL-CONTEXT-PRESERVATION
+
+  - from: TASK-022
+    type: implements
+    to: FEAT-004
+
+  - from: TASK-022
+    type: decomposes_into
+    to: EP-TASK-022
+
+  - from: EP-TASK-001
+    type: derives_from
+    to: TASK-001
+
+  - from: EP-TASK-001
+    type: generates
+    to: PROMPT-TASK-001-example
+
+  - from: EP-TASK-001
+    type: constrained_by
+    to: ADR-001
+
+  - from: EP-TASK-002
+    type: derives_from
+    to: TASK-002
+
+  - from: EP-TASK-002
+    type: constrained_by
+    to: ADR-001
+
+  - from: EP-TASK-003
+    type: derives_from
+    to: TASK-003
+
+  - from: EP-TASK-003
+    type: constrained_by
+    to: ADR-004
+
+  - from: EP-TASK-004
+    type: derives_from
+    to: TASK-004
+
+  - from: EP-TASK-004
+    type: generates
+    to: PROMPT-TASK-004-coding-prompt-generation
+
+  - from: EP-TASK-004
+    type: constrained_by
+    to: ADR-004
+
+  - from: EP-TASK-005
+    type: derives_from
+    to: TASK-005
+
+  - from: EP-TASK-005
+    type: generates
+    to: PROMPT-TASK-005-safe-draft-remediation
+
+  - from: EP-TASK-005
+    type: constrained_by
+    to: ADR-001
+
+  - from: EP-TASK-006
+    type: derives_from
+    to: TASK-006
+
+  - from: EP-TASK-006
+    type: generates
+    to: PROMPT-TASK-006-context-package-generator
+
+  - from: EP-TASK-006
+    type: constrained_by
+    to: ADR-004
+
+  - from: EP-TASK-007
+    type: derives_from
+    to: TASK-007
+
+  - from: EP-TASK-007
+    type: generates
+    to: PROMPT-TASK-007-knowledge-graph-extraction
+
+  - from: EP-TASK-007
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-008
+    type: derives_from
+    to: TASK-008
+
+  - from: EP-TASK-008
+    type: generates
+    to: PROMPT-TASK-008-knowledge-graph-trace-paths
+
+  - from: EP-TASK-008
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-009
+    type: derives_from
+    to: TASK-009
+
+  - from: EP-TASK-009
+    type: generates
+    to: PROMPT-TASK-009-orphan-task-detection
+
+  - from: EP-TASK-009
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-010
+    type: derives_from
+    to: TASK-010
+
+  - from: EP-TASK-010
+    type: generates
+    to: PROMPT-TASK-010-dependency-map-generation
+
+  - from: EP-TASK-010
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-011
+    type: derives_from
+    to: TASK-011
+
+  - from: EP-TASK-011
+    type: generates
+    to: PROMPT-TASK-011-optional-rag-retrieval-contract
+
+  - from: EP-TASK-011
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-012
+    type: derives_from
+    to: TASK-012
+
+  - from: EP-TASK-012
+    type: generates
+    to: PROMPT-TASK-012-harden-optional-local-retrieval
+
+  - from: EP-TASK-012
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-013
+    type: derives_from
+    to: TASK-013
+
+  - from: EP-TASK-013
+    type: generates
+    to: PROMPT-TASK-013-retrieval-evaluation-baseline
+
+  - from: EP-TASK-013
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-014
+    type: derives_from
+    to: TASK-014
+
+  - from: EP-TASK-014
+    type: generates
+    to: PROMPT-TASK-014-candidate-retrieval-comparison
+
+  - from: EP-TASK-014
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-015
+    type: derives_from
+    to: TASK-015
+
+  - from: EP-TASK-015
+    type: generates
+    to: PROMPT-TASK-015-local-semantic-candidate-adapter
+
+  - from: EP-TASK-015
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-016
+    type: derives_from
+    to: TASK-016
+
+  - from: EP-TASK-016
+    type: generates
+    to: PROMPT-TASK-016-manager-visibility-interface
+
+  - from: EP-TASK-016
+    type: constrained_by
+    to: ADR-001
+
+  - from: EP-TASK-017
+    type: derives_from
+    to: TASK-017
+
+  - from: EP-TASK-017
+    type: generates
+    to: PROMPT-TASK-017-local-embedding-index
+
+  - from: EP-TASK-017
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-018
+    type: derives_from
+    to: TASK-018
+
+  - from: EP-TASK-018
+    type: generates
+    to: PROMPT-TASK-018-embedding-provider-adapter-boundary
+
+  - from: EP-TASK-018
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-019
+    type: derives_from
+    to: TASK-019
+
+  - from: EP-TASK-019
+    type: generates
+    to: PROMPT-TASK-019-embedding-provider-safety-gates
+
+  - from: EP-TASK-019
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-020
+    type: derives_from
+    to: TASK-020
+
+  - from: EP-TASK-020
+    type: generates
+    to: PROMPT-TASK-020-external-provider-dry-run-contract
+
+  - from: EP-TASK-020
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-021
+    type: derives_from
+    to: TASK-021
+
+  - from: EP-TASK-021
+    type: generates
+    to: PROMPT-TASK-021-provider-promotion-thresholds
+
+  - from: EP-TASK-021
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-TASK-022
+    type: derives_from
+    to: TASK-022
+
+  - from: EP-TASK-022
+    type: generates
+    to: PROMPT-TASK-022-provider-status-manager-interface
+
+  - from: EP-TASK-022
+    type: constrained_by
+    to: ADR-002
+
+  - from: EP-CROSS-003
+    type: constrained_by
+    to: ADR-003
+
+  - from: PROMPT-TASK-001-example
+    type: derives_from
+    to: EP-TASK-001
+
+  - from: PROMPT-TASK-001-example
+    type: included_in_context
+    to: CP-TASK-001-example
+
+  - from: PROMPT-TASK-004-coding-prompt-generation
+    type: derives_from
+    to: EP-TASK-004
+
+  - from: PROMPT-TASK-004-coding-prompt-generation
+    type: included_in_context
+    to: CP-TASK-001-example
+
+  - from: PROMPT-TASK-005-safe-draft-remediation
+    type: derives_from
+    to: EP-TASK-005
+
+  - from: PROMPT-TASK-005-safe-draft-remediation
+    type: included_in_context
+    to: CP-TASK-005-safe-draft-remediation
+
+  - from: PROMPT-TASK-006-context-package-generator
+    type: derives_from
+    to: EP-TASK-006
+
+  - from: PROMPT-TASK-006-context-package-generator
+    type: included_in_context
+    to: CP-task-006
+
+  - from: PROMPT-TASK-007-knowledge-graph-extraction
+    type: derives_from
+    to: EP-TASK-007
+
+  - from: PROMPT-TASK-007-knowledge-graph-extraction
+    type: included_in_context
+    to: CP-task-007
+
+  - from: PROMPT-TASK-008-knowledge-graph-trace-paths
+    type: derives_from
+    to: EP-TASK-008
+
+  - from: PROMPT-TASK-008-knowledge-graph-trace-paths
+    type: included_in_context
+    to: CP-task-008
+
+  - from: PROMPT-TASK-009-orphan-task-detection
+    type: derives_from
+    to: EP-TASK-009
+
+  - from: PROMPT-TASK-009-orphan-task-detection
+    type: included_in_context
+    to: CP-task-009
+
+  - from: PROMPT-TASK-010-dependency-map-generation
+    type: derives_from
+    to: EP-TASK-010
+
+  - from: PROMPT-TASK-010-dependency-map-generation
+    type: included_in_context
+    to: CP-task-010
+
+  - from: PROMPT-TASK-011-optional-rag-retrieval-contract
+    type: derives_from
+    to: EP-TASK-011
+
+  - from: PROMPT-TASK-011-optional-rag-retrieval-contract
+    type: included_in_context
+    to: CP-task-011
+
+  - from: PROMPT-TASK-012-harden-optional-local-retrieval
+    type: derives_from
+    to: EP-TASK-012
+
+  - from: PROMPT-TASK-012-harden-optional-local-retrieval
+    type: included_in_context
+    to: CP-task-012
+
+  - from: PROMPT-TASK-013-retrieval-evaluation-baseline
+    type: derives_from
+    to: EP-TASK-013
+
+  - from: PROMPT-TASK-013-retrieval-evaluation-baseline
+    type: included_in_context
+    to: CP-task-013
+
+  - from: PROMPT-TASK-014-candidate-retrieval-comparison
+    type: derives_from
+    to: EP-TASK-014
+
+  - from: PROMPT-TASK-014-candidate-retrieval-comparison
+    type: included_in_context
+    to: CP-task-014
+
+  - from: PROMPT-TASK-015-local-semantic-candidate-adapter
+    type: derives_from
+    to: EP-TASK-015
+
+  - from: PROMPT-TASK-015-local-semantic-candidate-adapter
+    type: included_in_context
+    to: CP-task-015
+
+  - from: PROMPT-TASK-016-manager-visibility-interface
+    type: derives_from
+    to: EP-TASK-016
+
+  - from: PROMPT-TASK-016-manager-visibility-interface
+    type: included_in_context
+    to: CP-task-016
+
+  - from: PROMPT-TASK-017-local-embedding-index
+    type: derives_from
+    to: EP-TASK-017
+
+  - from: PROMPT-TASK-017-local-embedding-index
+    type: included_in_context
+    to: CP-task-017
+
+  - from: PROMPT-TASK-018-embedding-provider-adapter-boundary
+    type: derives_from
+    to: EP-TASK-018
+
+  - from: PROMPT-TASK-018-embedding-provider-adapter-boundary
+    type: included_in_context
+    to: CP-task-018
+
+  - from: PROMPT-TASK-019-embedding-provider-safety-gates
+    type: derives_from
+    to: EP-TASK-019
+
+  - from: PROMPT-TASK-019-embedding-provider-safety-gates
+    type: included_in_context
+    to: CP-task-019
+
+  - from: PROMPT-TASK-020-external-provider-dry-run-contract
+    type: derives_from
+    to: EP-TASK-020
+
+  - from: PROMPT-TASK-020-external-provider-dry-run-contract
+    type: included_in_context
+    to: CP-task-020
+
+  - from: PROMPT-TASK-021-provider-promotion-thresholds
+    type: derives_from
+    to: EP-TASK-021
+
+  - from: PROMPT-TASK-021-provider-promotion-thresholds
+    type: included_in_context
+    to: CP-task-021
+
+  - from: PROMPT-TASK-022-provider-status-manager-interface
+    type: derives_from
+    to: EP-TASK-022
+
+  - from: PROMPT-TASK-022-provider-status-manager-interface
+    type: included_in_context
+    to: CP-task-022
+
+  - from: VAL-TASK-001-required-document-audit-rules
+    type: validates
+    to: TASK-001
+
+  - from: VAL-TASK-001-required-document-audit-rules
+    type: validates
+    to: EP-TASK-001
+
+  - from: VAL-TASK-002-traceability-checks
+    type: validates
+    to: TASK-002
+
+  - from: VAL-TASK-002-traceability-checks
+    type: validates
+    to: EP-TASK-002
+
+  - from: VAL-TASK-003-context-package-schema
+    type: validates
+    to: TASK-003
+
+  - from: VAL-TASK-003-context-package-schema
+    type: validates
+    to: EP-TASK-003
+
+  - from: VAL-TASK-004-coding-prompt-generation
+    type: validates
+    to: TASK-004
+
+  - from: VAL-TASK-004-coding-prompt-generation
+    type: validates
+    to: EP-TASK-004
+
+  - from: VAL-TASK-005-safe-draft-remediation
+    type: validates
+    to: TASK-005
+
+  - from: VAL-TASK-005-safe-draft-remediation
+    type: validates
+    to: EP-TASK-005
+
+  - from: VAL-TASK-006-context-package-generator
+    type: validates
+    to: TASK-006
+
+  - from: VAL-TASK-006-context-package-generator
+    type: validates
+    to: EP-TASK-006
+
+  - from: VAL-TASK-007-knowledge-graph-extraction
+    type: validates
+    to: TASK-007
+
+  - from: VAL-TASK-007-knowledge-graph-extraction
+    type: validates
+    to: EP-TASK-007
+
+  - from: VAL-TASK-008-knowledge-graph-trace-paths
+    type: validates
+    to: TASK-008
+
+  - from: VAL-TASK-008-knowledge-graph-trace-paths
+    type: validates
+    to: EP-TASK-008
+
+  - from: VAL-TASK-009-orphan-task-detection
+    type: validates
+    to: TASK-009
+
+  - from: VAL-TASK-009-orphan-task-detection
+    type: validates
+    to: EP-TASK-009
+
+  - from: VAL-TASK-010-dependency-map-generation
+    type: validates
+    to: TASK-010
+
+  - from: VAL-TASK-010-dependency-map-generation
+    type: validates
+    to: EP-TASK-010
+
+  - from: VAL-TASK-011-optional-rag-retrieval-contract
+    type: validates
+    to: TASK-011
+
+  - from: VAL-TASK-011-optional-rag-retrieval-contract
+    type: validates
+    to: EP-TASK-011
+
+  - from: VAL-TASK-012-harden-optional-local-retrieval
+    type: validates
+    to: TASK-012
+
+  - from: VAL-TASK-012-harden-optional-local-retrieval
+    type: validates
+    to: EP-TASK-012
+
+  - from: VAL-TASK-013-retrieval-evaluation-baseline
+    type: validates
+    to: TASK-013
+
+  - from: VAL-TASK-013-retrieval-evaluation-baseline
+    type: validates
+    to: EP-TASK-013
+
+  - from: VAL-TASK-014-candidate-retrieval-comparison
+    type: validates
+    to: TASK-014
+
+  - from: VAL-TASK-014-candidate-retrieval-comparison
+    type: validates
+    to: EP-TASK-014
+
+  - from: VAL-TASK-015-local-semantic-candidate-adapter
+    type: validates
+    to: TASK-015
+
+  - from: VAL-TASK-015-local-semantic-candidate-adapter
+    type: validates
+    to: EP-TASK-015
+
+  - from: VAL-TASK-016-manager-visibility-interface
+    type: validates
+    to: TASK-016
+
+  - from: VAL-TASK-016-manager-visibility-interface
+    type: validates
+    to: EP-TASK-016
+
+  - from: VAL-TASK-017-local-embedding-index
+    type: validates
+    to: TASK-017
+
+  - from: VAL-TASK-017-local-embedding-index
+    type: validates
+    to: EP-TASK-017
+
+  - from: VAL-TASK-018-embedding-provider-adapter-boundary
+    type: validates
+    to: TASK-018
+
+  - from: VAL-TASK-018-embedding-provider-adapter-boundary
+    type: validates
+    to: EP-TASK-018
+
+  - from: VAL-TASK-019-embedding-provider-safety-gates
+    type: validates
+    to: TASK-019
+
+  - from: VAL-TASK-019-embedding-provider-safety-gates
+    type: validates
+    to: EP-TASK-019
+
+  - from: VAL-TASK-020-external-provider-dry-run-contract
+    type: validates
+    to: TASK-020
+
+  - from: VAL-TASK-020-external-provider-dry-run-contract
+    type: validates
+    to: EP-TASK-020
+
+  - from: VAL-TASK-021-provider-promotion-thresholds
+    type: validates
+    to: TASK-021
+
+  - from: VAL-TASK-021-provider-promotion-thresholds
+    type: validates
+    to: EP-TASK-021
+
+  - from: VAL-TASK-022-provider-status-manager-interface
+    type: validates
+    to: TASK-022
+
+  - from: VAL-TASK-022-provider-status-manager-interface
+    type: validates
+    to: EP-TASK-022
+
+  - from: VAL-CROSS-REPO-DOS-ALIGNMENT
+    type: validates
+    to: EP-CROSS-003
+
+  - from: VISION-SUMMARY
+    type: summarized_by
+    to: VISION

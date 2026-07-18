@@ -1,0 +1,11 @@
+{
+  "retrieval_mode": "candidate-semantic-fixture",
+  "cases": [
+    {
+      "id": "task-013-baseline-prompt",
+      "returned_optional_paths": [
+        "docs/14_prompts/PROMPT-TASK-013-retrieval-evaluation-baseline.md"
+      ]
+    }
+  ]
+}

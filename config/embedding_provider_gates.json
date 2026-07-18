@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "active_provider": "local-hash",
+  "providers": [
+    {
+      "id": "local-hash",
+      "status": "approved",
+      "environment": "local",
+      "credential_mode": "none",
+      "allows_external_network": false,
+      "allowed_data_classifications": ["none", "synthetic"],
+      "human_review_required": false,
+      "data_boundary_document": "../docs/23_documentation_contracts/EMBEDDING_PROVIDER_SAFETY_GATES.md"
+    },
+    {
+      "id": "external-provider-dry-run",
+      "status": "approved",
+      "environment": "offline",
+      "credential_mode": "none",
+      "allows_external_network": false,
+      "dry_run": true,
+      "allowed_data_classifications": ["none", "synthetic"],
+      "human_review_required": true,
+      "data_boundary_document": "../docs/23_documentation_contracts/EMBEDDING_PROVIDER_SAFETY_GATES.md"
+    }
+  ]
+}

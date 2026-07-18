@@ -1,0 +1,14 @@
+{
+  "cases": [
+    {
+      "id": "task-013-baseline-prompt",
+      "task_id": "TASK-013",
+      "query": "retrieval evaluation baseline",
+      "limit": 1,
+      "min_score": 1,
+      "expected_optional_paths": [
+        "docs/14_prompts/PROMPT-TASK-013-retrieval-evaluation-baseline.md"
+      ]
+    }
+  ]
+}

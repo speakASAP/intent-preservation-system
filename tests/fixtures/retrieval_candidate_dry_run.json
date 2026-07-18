@@ -1,0 +1,18 @@
+{
+  "retrieval_mode": "external-provider-dry-run",
+  "embedding_provider": "external-provider-dry-run",
+  "dry_run": true,
+  "network_calls": 0,
+  "baseline_path": "tests/fixtures/retrieval_baseline.json",
+  "cases": [
+    {
+      "id": "task-013-baseline-prompt",
+      "task_id": "TASK-013",
+      "returned_optional_paths": [
+        "docs/14_prompts/PROMPT-TASK-013-retrieval-evaluation-baseline.md"
+      ],
+      "findings": [],
+      "dry_run": true
+    }
+  ]
+}
