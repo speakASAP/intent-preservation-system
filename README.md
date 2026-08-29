@@ -82,12 +82,15 @@ and evidence stay in the adopting repository.
 
 Follow
 [`docs/24_onboarding/PROJECT_ADOPTION_STANDARD.md`](docs/24_onboarding/PROJECT_ADOPTION_STANDARD.md):
+and the complete
+[`PROJECT_DOCUMENT_SET.md`](docs/24_onboarding/PROJECT_DOCUMENT_SET.md):
 
 1. Create the project constitution and vision.
 2. Create `ips-adoption.json` from the profile template.
-3. Create the local project artifacts named by the profile.
+3. Scaffold and complete every mandatory local project artifact.
 4. Review every ecosystem integration capability.
-5. Run `python3 scripts/validate_adoption_profile.py --root <project>`.
+5. Run `python3 scripts/validate_adoption_profile.py --root <project> --phase planning` before implementation.
+6. Run the validator with `--phase deployment` before deployment.
 6. Use the full strict audit/gates in repositories that adopt the complete IPS
    documentation tree.
 7. Validate every completed task against original intent.

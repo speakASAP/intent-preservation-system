@@ -36,14 +36,19 @@ The profile declares:
 - a decision for every ecosystem integration capability;
 - the bootstrap task's traceability chain.
 
+The purpose, owner, mutability and maintained template for each required file
+are defined in [`PROJECT_DOCUMENT_SET.md`](PROJECT_DOCUMENT_SET.md).
+
 ## Required local artifacts
 
 For a new runtime service:
 
 ```text
+README.md
 BUSINESS.md
 SYSTEM.md
 AGENTS.md
+CLAUDE.md
 AGENT_OPERATIONS.md
 TASKS.md
 STATE.json
@@ -58,8 +63,15 @@ docs/22_goal_impact/GOAL-IMPACT-TASK-001.md
 docs/orchestrator/VALIDATION_DEBT.md
 ```
 
-Use the central templates as source material, but the resulting documents must
-describe the project rather than the IPS framework.
+Create the skeleton without overwriting existing intent:
+
+```bash
+python3 ../intent-preservation-system/scripts/scaffold_project_adoption.py \
+  --root . --project <repository> --repository https://github.com/speakASAP/<repository>
+```
+
+Then replace every relevant placeholder from approved project sources. The
+resulting documents must describe the project rather than the IPS framework.
 
 ## Integration review
 
@@ -81,11 +93,18 @@ be added to the profile validator in the same change.
 Run from the adopting repository:
 
 ```bash
-python3 ../intent-preservation-system/scripts/validate_adoption_profile.py --root .
+python3 ../intent-preservation-system/scripts/validate_adoption_profile.py --root . --phase planning
+python3 ../intent-preservation-system/scripts/validate_adoption_profile.py --root . --phase deployment
 ```
 
-The validator is dependency-free and checks profile structure, required local
-artifacts, the bootstrap traceability chain and the complete integration review.
+The validator is dependency-free and checks profile structure, canonical and
+repository-contained artifact paths, required local artifacts, unresolved
+placeholders, protected-intent approval status, valid `STATE.json`, the
+bootstrap traceability chain and the complete integration review.
+
+The `planning` phase permits only the bootstrap validation report to remain a
+draft while requiring approved intent and a complete task and execution plan.
+The `deployment` phase additionally requires completed, validated evidence. A
 
 Operational IPS gates scan the adopting repository by default. If a repository
 contains a derived or generated documentation tree that is validated at its

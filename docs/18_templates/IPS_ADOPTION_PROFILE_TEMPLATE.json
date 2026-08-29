@@ -10,10 +10,12 @@
     "revision": "REPLACE_WITH_REVIEWED_GIT_COMMIT"
   },
   "artifacts": {
+    "readme": "README.md",
     "business": "BUSINESS.md",
     "system": "SYSTEM.md",
     "agents": "AGENTS.md",
     "operations": "AGENT_OPERATIONS.md",
+    "claude": "CLAUDE.md",
     "tasks": "TASKS.md",
     "state": "STATE.json",
     "constitution": "docs/00_constitution/CONSTITUTION.md",

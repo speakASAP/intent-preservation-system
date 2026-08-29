@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "project": "{{PROJECT_NAME}}",
+  "lifecycle": "onboarding",
+  "health": "not-deployed",
+  "activeTask": "TASK-001-bootstrap-service",
+  "lastCompletedTask": null,
+  "lastUpdated": "{{DATE}}",
+  "deployment": {
+    "status": "not-started",
+    "image": null,
+    "revision": null
+  },
+  "blockers": [
+    "[MISSING: record owner decisions or dependencies, or remove this entry when none]"
+  ],
+  "followUps": []
+}

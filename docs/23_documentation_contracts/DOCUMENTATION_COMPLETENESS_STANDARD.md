@@ -87,6 +87,14 @@ A section is not complete if it contains only:
 
 ## Required sections by document type
 
+### Alfares Project Bootstrap Set
+
+New Alfares services use the root, protected-intent and bootstrap artifact
+manifest in
+[`../24_onboarding/PROJECT_DOCUMENT_SET.md`](../24_onboarding/PROJECT_DOCUMENT_SET.md).
+Its maintained templates define the required sections, and
+`scripts/validate_adoption_profile.py` enforces them by lifecycle phase. Do not
+duplicate that manifest here.
 ### Vision Evolution Entry
 
 - Summary
