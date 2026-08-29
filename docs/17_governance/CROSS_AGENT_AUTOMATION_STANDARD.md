@@ -65,7 +65,10 @@ For remote repositories:
 
 - Work in the remote repository path specified by the project, such as `/home/ssf/Documents/Github/<repository>`.
 - Do not mirror remote repository contents into local user directories.
-- Do not deploy unless the project instructions and owner approval explicitly allow deployment.
+- Deploy only under pre-existing, human-approved project or ecosystem policy.
+  The policy must identify the permitted actor or automation, environment,
+  service scope, queue/manual path and allowed circumstances. An agent cannot
+  create or weaken the authorization it relies on during the current task.
 - Keep command output sanitized. Do not print secrets, token values, raw production data, private customer evidence, or confidential identifiers.
 
 ## Agent Final Report

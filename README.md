@@ -74,15 +74,23 @@ scripts/               Utility scripts
 11. Project invariants, sensitive-data handling, contract impact and replay/determinism impact must be declared before coding.
 12. Operational gates produce validation evidence before coding and deployment.
 
-## Quick start
+## Project adoption
 
-1. Copy this repository into a new project.
-2. Fill `docs/00_constitution/CONSTITUTION.md` and `docs/01_vision/VISION.md` first.
-3. Mark the vision document as protected in Git branch rules.
-4. Use templates from `docs/18_templates/` to create system, subsystem, feature and task files.
-5. Run `python3 scripts/strict_doc_audit.py --format markdown --fail-on-issues` before implementation.
-6. Generate context packages for coding agents.
-7. Validate every completed task against the original intent.
+Do not copy the complete IPS repository into every project. Central standards,
+templates and validators stay here; project intent, decisions, tasks, plans
+and evidence stay in the adopting repository.
+
+Follow
+[`docs/24_onboarding/PROJECT_ADOPTION_STANDARD.md`](docs/24_onboarding/PROJECT_ADOPTION_STANDARD.md):
+
+1. Create the project constitution and vision.
+2. Create `ips-adoption.json` from the profile template.
+3. Create the local project artifacts named by the profile.
+4. Review every ecosystem integration capability.
+5. Run `python3 scripts/validate_adoption_profile.py --root <project>`.
+6. Use the full strict audit/gates in repositories that adopt the complete IPS
+   documentation tree.
+7. Validate every completed task against original intent.
 
 ## Local self-audit
 

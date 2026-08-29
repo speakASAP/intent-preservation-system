@@ -48,7 +48,10 @@ EXCLUDED_PARTS = {
 
 SENSITIVE_PATTERNS: dict[str, re.Pattern[str]] = {
     "secret_assignment": re.compile(
-        r"(?i)\b(api[_-]?key|access[_-]?token|client[_-]?secret|password|private[_-]?key)\b\s*[:=]\s*['\"]?[A-Za-z0-9_./+=:-]{12,}"
+        r"(?i)\b(api[_-]?key|access[_-]?token|client[_-]?secret|password|private[_-]?key)"
+        r"\b\s*[:=]\s*['\"]?"
+        r"(?!process\.env\b|os\.environ\b|env\.|req\.|request\.|document\.|getenv\b)"
+        r"[A-Za-z0-9_./+=:-]{12,}"
     ),
     "authorization_header": re.compile(r"(?i)\bAuthorization\s*:\s*Bearer\s+[A-Za-z0-9_./+=:-]{12,}"),
     "raw_production_data_instruction": re.compile(
@@ -67,6 +70,32 @@ def _utc_now() -> str:
 
 def _read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="replace")
+
+
+def load_gate_exclusions(root: Path) -> tuple[str, ...]:
+    """Load repository-relative path prefixes excluded from operational gates."""
+    ignore_path = root / ".ipsignore"
+    if not ignore_path.is_file():
+        return ()
+
+    exclusions: list[str] = []
+    for raw_line in _read_text(ignore_path).splitlines():
+        value = raw_line.split("#", 1)[0].strip().strip("/")
+        if not value:
+            continue
+        candidate = Path(value)
+        if candidate.is_absolute() or ".." in candidate.parts:
+            raise ValueError(f"invalid .ipsignore path: {raw_line.strip()}")
+        exclusions.append(candidate.as_posix())
+    return tuple(exclusions)
+
+
+def is_gate_excluded(relative_path: Path, exclusions: tuple[str, ...]) -> bool:
+    relative = relative_path.as_posix()
+    return any(
+        relative == prefix or relative.startswith(f"{prefix}/")
+        for prefix in exclusions
+    )
 
 
 def _normalize_heading(value: str) -> str:
@@ -123,11 +152,15 @@ def _is_text_file(path: Path) -> bool:
 
 def scan_sensitive_data(root: Path) -> list[dict[str, str]]:
     findings: list[dict[str, str]] = []
+    exclusions = load_gate_exclusions(root)
     for path in sorted(root.rglob("*")):
         if not path.is_file():
             continue
-        rel_parts = path.relative_to(root).parts
+        relative_path = path.relative_to(root)
+        rel_parts = relative_path.parts
         if EXCLUDED_PARTS.intersection(rel_parts):
+            continue
+        if is_gate_excluded(relative_path, exclusions):
             continue
         if not _is_text_file(path):
             continue

@@ -16,7 +16,11 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from scripts.pre_coding_gate import run_gate as run_pre_coding_gate  # noqa: E402
+from scripts.pre_coding_gate import (  # noqa: E402
+    is_gate_excluded,
+    load_gate_exclusions,
+    run_gate as run_pre_coding_gate,
+)
 from scripts.strict_doc_audit import audit as run_strict_doc_audit  # noqa: E402
 
 
@@ -62,9 +66,13 @@ def _validation_reports(root: Path, target: str | None) -> dict[str, Any]:
 
 def _missing_markers(root: Path) -> list[dict[str, Any]]:
     findings: list[dict[str, Any]] = []
+    exclusions = load_gate_exclusions(root)
     for path in sorted(root.rglob("*.md")):
-        rel_parts = path.relative_to(root).parts
+        relative_path = path.relative_to(root)
+        rel_parts = relative_path.parts
         if MARKER_EXCLUDED_PARTS.intersection(rel_parts):
+            continue
+        if is_gate_excluded(relative_path, exclusions):
             continue
         for line_number, line in enumerate(_read_text(path).splitlines(), start=1):
             for match in MARKER_RE.finditer(line):

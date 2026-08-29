@@ -110,6 +110,30 @@ Run the local gate scripts and focused tests.
             any(item["path"] == ".env" and item["pattern"] == "secret_assignment" for item in report["sensitive_data_findings"])
         )
 
+    def test_pre_coding_gate_allows_runtime_secret_references(self) -> None:
+        self.write_pre_coding_baseline()
+        self.write(
+            "src/config.ts",
+            "const apiKey = process.env.ANTHROPIC_API_KEY;\n"
+            "const password = document.getElementById('password');\n",
+        )
+
+        report = run_pre_coding_gate(self.tmp)
+
+        self.assertEqual(report["status"], "pass")
+        self.assertEqual(report["sensitive_data_findings"], [])
+
+    def test_operational_gates_honor_ipsignore_path_prefixes(self) -> None:
+        self.write_pre_coding_baseline()
+        self.write(".ipsignore", "# Derived documentation snapshot\ndocs/services/\n")
+        self.write("docs/services/copied.md", "access_token=abc123456789xyz\n[MISSING: copied marker]\n")
+
+        pre_coding = run_pre_coding_gate(self.tmp)
+        deployment = run_deployment_gate(self.tmp)
+
+        self.assertEqual(pre_coding["status"], "pass")
+        self.assertEqual(deployment["unresolved_markers"], [])
+
     def test_deployment_gate_reports_unresolved_markers_and_requires_validation_target(self) -> None:
         self.write("docs/12_validation/VAL-TASK-001.md", "# Validation\n\nTASK-001 passed.\n")
         self.write("docs/11_tasks/TASK-001.md", "# Task\n\n[MISSING: human decision]\n")
