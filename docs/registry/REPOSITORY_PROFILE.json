@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "repository": "intent-preservation-system",
+  "profile": "minimal",
+  "project_registration": {
+    "runlayer_project_slug": null,
+    "status": "not-linked"
+  },
+  "collectable_paths": [
+    "AGENTS.md",
+    "BUSINESS.md",
+    "SYSTEM.md",
+    "TASKS.md",
+    "STATE.json",
+    "docs/00_constitution/CONSTITUTION.md",
+    "docs/01_vision/VISION.md",
+    "docs/12_validation/VAL-2026-08-30-repository-profile-adoption.md",
+    "docs/17_governance/CROSS_AGENT_AUTOMATION_STANDARD.md",
+    "docs/17_governance/PROJECT_INVARIANTS.md",
+    "docs/registry/REPOSITORY_PROFILE.json",
+    "docs/registry/ARTIFACT_INDEX.json"
+  ],
+  "excluded_path_patterns": [
+    ".env*",
+    "**/secrets/**",
+    "**/*.pem",
+    "**/node_modules/**",
+    "**/coverage/**"
+  ],
+  "owners": {
+    "business_intent": "human",
+    "technical_system": "repo-maintainer",
+    "planning_state": "repo-maintainer",
+    "integration": "repo-maintainer"
+  }
+}

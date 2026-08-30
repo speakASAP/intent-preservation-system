@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "repository": "intent-preservation-system",
+  "service": {
+    "name": "intent-preservation-system",
+    "kind": "hub",
+    "lifecycle": "active",
+    "deployment": "none"
+  },
+  "planning": {
+    "status": "review",
+    "active_goal_ids": [],
+    "next_ready_goal_ids": [],
+    "blocked_goal_ids": [],
+    "active_workstream_ids": [],
+    "last_updated_at": "2026-08-30T21:27:06Z"
+  },
+  "delivery": {
+    "last_validation_id": "VAL-2026-08-30-REPOSITORY-PROFILE-ADOPTION",
+    "last_validation_status": "validated",
+    "validation_debt_count": 0,
+    "last_deployment_commit": null
+  },
+  "collection": {
+    "profile": "minimal",
+    "artifact_index": "docs/registry/ARTIFACT_INDEX.json",
+    "status_source": "human-and-agent-maintained"
+  }
+}

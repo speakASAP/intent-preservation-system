@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "repository": "intent-preservation-system",
+  "generated_at": "2026-08-30T21:27:06Z",
+  "artifacts": [
+    {
+      "id": "BUSINESS-ROOT",
+      "type": "decision",
+      "status": "review",
+      "title": "Root business index for IPS governance hub",
+      "path": "BUSINESS.md",
+      "parent_ids": [
+        "VISION-BASELINE"
+      ],
+      "updated_at": "2026-08-30T21:27:06Z"
+    },
+    {
+      "id": "REPOSITORY-PROFILE",
+      "type": "decision",
+      "status": "validated",
+      "title": "Wave 0 repository profile contract",
+      "path": "docs/registry/REPOSITORY_PROFILE.json",
+      "parent_ids": [
+        "TASKS-ROOT"
+      ],
+      "updated_at": "2026-08-30T21:27:06Z"
+    },
+    {
+      "id": "SYSTEM-ROOT",
+      "type": "decision",
+      "status": "review",
+      "title": "Root system index for IPS governance hub",
+      "path": "SYSTEM.md",
+      "parent_ids": [
+        "BUSINESS-ROOT"
+      ],
+      "updated_at": "2026-08-30T21:27:06Z"
+    },
+    {
+      "id": "TASKS-ROOT",
+      "type": "task",
+      "status": "ready",
+      "title": "Root task register for repository-level planning state",
+      "path": "TASKS.md",
+      "parent_ids": [
+        "SYSTEM-ROOT"
+      ],
+      "updated_at": "2026-08-30T21:27:06Z"
+    },
+    {
+      "id": "VAL-2026-08-30-REPOSITORY-PROFILE-ADOPTION",
+      "type": "validation",
+      "status": "validated",
+      "title": "Validation evidence for docs-only repository profile adoption",
+      "path": "docs/12_validation/VAL-2026-08-30-repository-profile-adoption.md",
+      "parent_ids": [
+        "REPOSITORY-PROFILE",
+        "TASKS-ROOT"
+      ],
+      "updated_at": "2026-08-30T21:27:06Z"
+    },
+    {
+      "id": "VISION-BASELINE",
+      "type": "vision",
+      "status": "validated",
+      "title": "Immutable IPS vision baseline",
+      "path": "docs/01_vision/VISION.md",
+      "parent_ids": [],
+      "updated_at": "2026-07-18T17:17:18+02:00"
+    }
+  ],
+  "warnings": []
+}
