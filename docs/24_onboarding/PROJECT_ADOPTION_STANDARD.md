@@ -23,6 +23,18 @@ Do not copy central standards into service repositories. Copying creates
 independent versions that drift. Link to the central version and pin the
 adoption profile to a reviewed IPS Git revision.
 
+Alfares agents must enter this workflow through the canonical shared skill and
+non-destructive harness:
+
+```text
+/home/ssf/Documents/Github/shared/.agents/skills/register-new-app/SKILL.md
+/home/ssf/Documents/Github/shared/scripts/scaffold-new-service.py
+```
+
+The skill coordinates agent discovery and ecosystem registration. This
+standard remains authoritative for the adoption artifacts and validation
+semantics.
+
 ## Required profile
 
 Every newly created Alfares service must contain `ips-adoption.json`, based on

@@ -23,6 +23,9 @@ Read in this order before planning or implementation:
 - Cross-agent rules are defined in
   `/home/ssf/.ai-agent-standards/CROSS_AGENT_AUTOMATION_STANDARD.md`.
 - docs-RAG is a derived discovery index; verify critical facts against Git.
+- While onboarding is incomplete, use the canonical workflow at
+  `/home/ssf/Documents/Github/shared/.agents/skills/register-new-app/SKILL.md`
+  and do not bypass its planning or ecosystem-registration gates.
 
 ## Intent Preservation System
 
