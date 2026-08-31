@@ -1,3 +1,9 @@
+---
+status: draft
+owner: repository-owner
+last_updated: YYYY-MM-DD
+---
+
 # EP-TASK-XXX: Execution Plan Title
 
 ```yaml

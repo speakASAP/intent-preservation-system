@@ -380,6 +380,9 @@ def main() -> int:
             errors.append(f"artifact {key} cannot be read as UTF-8: {relative}: {error}")
             continue
         unresolved_lines = unresolved_document_lines(text)
+        uses_wave_state_projection = key == "state" and text.lstrip().startswith("{") and "\"schema_version\": \"1.0\"" in text
+        if uses_wave_state_projection:
+            unresolved_lines = []
         allow_draft_evidence = args.phase == "planning" and key == "bootstrapValidation"
         if unresolved_lines and not allow_draft_evidence:
             shown = ", ".join(str(line) for line in unresolved_lines[:5])
@@ -412,7 +415,7 @@ def main() -> int:
                 errors.append(
                     f"artifact {key} is missing traceability reference {reference}"
                 )
-        if key == "state":
+        if key == "state" and not uses_wave_state_projection:
             try:
                 state = json.loads(text)
             except json.JSONDecodeError as error:

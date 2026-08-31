@@ -43,6 +43,18 @@ reviewed amendment.
 | `docs/12_validation/VAL-TASK-001-bootstrap-service.md` | Acceptance and integration evidence | `BOOTSTRAP_VALIDATION_TEMPLATE.md` |
 | `docs/orchestrator/VALIDATION_DEBT.md` | Known failures that are outside the active task | `ADOPTION_VALIDATION_DEBT_TEMPLATE.md` |
 
+## Choosing a plan format
+
+Use `docs/superpowers/plans/` for a single-feature, same-day-scoped change.
+Every plan must begin with the metadata defined in
+[`SUPERPOWERS_PLAN_FRONTMATTER_TEMPLATE.md`](../18_templates/SUPERPOWERS_PLAN_FRONTMATTER_TEMPLATE.md).
+
+Use `docs/21_execution_plans/EP-*.md` with its `docs/11_tasks`,
+`docs/22_goal_impact`, and `docs/12_validation` siblings for work that changes
+a public contract, spans more than one service, or requires more than one work
+session. Preserve existing plans in place during migration; do not infer a
+completed status from checked boxes alone.
+
 ## Generated and optional agent files
 
 `.github/copilot-instructions.md` is required for ecosystem repositories but is
