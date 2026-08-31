@@ -1,22 +1,19 @@
----
-schema_version: "1.0"
-repository: intent-preservation-system
-updated_at: 2026-08-30T21:27:06Z
-active_goal_ids: []
----
+# Tasks
 
 ## Active
-- None declared in the root register at this timestamp.
+- complete IPS adoption profile for intent-preservation-system
 
-## Ready Next
-- Keep root profile/index/state artifacts synchronized with canonical IPS governance docs.
-- Continue using `docs/11_tasks/`, `docs/21_execution_plans/`, and `docs/12_validation/` for bounded execution records.
+## Ready next
+- review the IPS standard for repo archetype coverage and future adoption edge cases
+- consider whether additional validator guidance is required for low-priority or hub-only repos
 
 ## Blocked
-- None declared in the root register.
+- no active blockers beyond keeping the standards-hub boundary explicit in all adoption artifacts
 
 ## Completed
-- [x] TASK-REPOSITORY-PROFILE-ADOPTION-2026-08-30 — Added Wave 0 repository profile/state/index artifacts for tooling compatibility.
+- IPS adoption profile scaffolded
+- required IPS artifacts aligned to the repo’s role as the ecosystem standards authority
+- validation criteria kept truthful for a non-runtime governance and tooling repo
 
 ## Handoff
-- Validation evidence: `docs/12_validation/VAL-2026-08-30-repository-profile-adoption.md`.
+- service repos retain runtime ownership and validation evidence; this repo remains the standards and validation hub for the ecosystem

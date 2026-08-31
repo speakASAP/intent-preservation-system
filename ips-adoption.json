@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "profile": "tooling",
+  "project": {
+    "name": "intent-preservation-system",
+    "repository": "https://github.com/speakASAP/intent-preservation-system"
+  },
+  "standard": {
+    "repository": "https://github.com/speakASAP/intent-preservation-system",
+    "revision": "93b841891f890bbb1250bb371be3dedb6354e108"
+  },
+  "artifacts": {
+    "readme": "README.md",
+    "business": "BUSINESS.md",
+    "system": "SYSTEM.md",
+    "agents": "AGENTS.md",
+    "operations": "AGENT_OPERATIONS.md",
+    "claude": "CLAUDE.md",
+    "tasks": "TASKS.md",
+    "state": "STATE.json",
+    "constitution": "docs/00_constitution/CONSTITUTION.md",
+    "vision": "docs/01_vision/VISION.md",
+    "integrationContract": "docs/06_architecture/INTEGRATION_CONTRACT.md",
+    "projectInvariants": "docs/17_governance/PROJECT_INVARIANTS.md",
+    "validationDebt": "docs/orchestrator/VALIDATION_DEBT.md",
+    "bootstrapTask": "docs/11_tasks/TASK-001-bootstrap-service.md",
+    "bootstrapGoalImpact": "docs/22_goal_impact/GOAL-IMPACT-TASK-001.md",
+    "bootstrapExecutionPlan": "docs/21_execution_plans/EP-TASK-001-bootstrap-service.md",
+    "bootstrapValidation": "docs/12_validation/VAL-TASK-001-bootstrap-service.md"
+  },
+  "integrationReview": [
+    {"capability": "auth","component": "not-applicable","decision": "not-applicable","reason": "This repo is the standards and governance hub, not an auth runtime.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "postgres","component": "not-applicable","decision": "not-applicable","reason": "This repo does not own a database runtime or application data layer.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "redis","component": "not-applicable","decision": "not-applicable","reason": "No Redis runtime is owned by this repo; caching remains with service runtimes.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "logging","component": "not-applicable","decision": "not-applicable","reason": "Logging is owned by services that run production workloads, not by the standards repo.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "notifications","component": "not-applicable","decision": "not-applicable","reason": "Notifications are the responsibility of runtime services, not this standards hub.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "ai","component": "not-applicable","decision": "not-applicable","reason": "AI runtime ownership remains separate from the standards repo.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "payments","component": "not-applicable","decision": "not-applicable","reason": "Payment handling is not part of the IPS standards repo’s operational responsibility.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "catalog","component": "not-applicable","decision": "not-applicable","reason": "Catalog ownership remains in the service repos that operate the product domain.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "orders","component": "not-applicable","decision": "not-applicable","reason": "Orders are not owned by the standards repo; they belong to the runtime service repositories.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "warehouse","component": "not-applicable","decision": "not-applicable","reason": "Warehouse workflows belong to the service repos that own stock truth, not the standards repo.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "invoices","component": "not-applicable","decision": "not-applicable","reason": "Invoice ownership stays outside the standards repo scope.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "object-storage","component": "not-applicable","decision": "not-applicable","reason": "This repo does not operate object storage or file-serving services for the platform.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "event-bus","component": "not-applicable","decision": "not-applicable","reason": "RabbitMQ contracts belong to the service repos that publish and consume events, not the standards repo.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "docs-rag","component": "not-applicable","decision": "not-applicable","reason": "This repo is the IPS standard source, not the docs-RAG runtime service.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "monitoring","component": "not-applicable","decision": "not-applicable","reason": "Monitoring remains with the runtime services and platform layer rather than the standards repo.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"},
+    {"capability": "backups","component": "not-applicable","decision": "not-applicable","reason": "No backup runtime or retention domain is owned by this standards repo.","contract": "not-applicable","configuration": "not-applicable","failureMode": "not-applicable","validation": "not-applicable"}
+  ]
+}

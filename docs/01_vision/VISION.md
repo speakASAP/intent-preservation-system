@@ -1,74 +1,37 @@
-# Vision Document
+# Vision
 
-Status: Immutable baseline  
-AI write access: Forbidden  
-Human write access: Protected amendment only
+completeness_level: complete
 
 ## One-sentence vision
-
-Build a file-first, AI-oriented project documentation and control system that preserves original intent, decomposes large projects into validated execution units and generates precise context packages for AI coding agents.
+Provide a shared, truthful IPS foundation for the Alfares ecosystem so all repos can preserve intent, ownership boundaries, and validation evidence without fabricating runtime scope.
 
 ## Problem statement
-
-AI-assisted development often fails not because AI cannot write code, but because long projects lose their original intent. Context windows are limited, agents receive incomplete or irrelevant information, architectural decisions disappear, tasks become disconnected from business goals and validation becomes inconsistent.
-
-The system addresses this by creating a structured, immutable and traceable documentation layer that guides the entire lifecycle from idea to code.
+The ecosystem needs a consistent way to describe project intent, adoption status, and operational boundaries, but multiple repos can drift into vague ownership or fabricated runtime claims without a single source of truth.
 
 ## Target users
-
-- solo builders using AI coding tools;
-- product owners coordinating AI-assisted delivery;
-- software architects decomposing large systems;
-- engineering teams working with multiple AI agents;
-- auditors reviewing documentation completeness;
-- organizations that need reproducible project reasoning.
+- Engineering teams across the Alfares ecosystem
+- Repo owners handling adoption and governance work
+- Platform maintainers who need consistent onboarding documentation and validation criteria
 
 ## Core user need
-
-The user needs a way to preserve the original big picture and continuously ensure that all future work remains aligned with it.
+Teams need a clear, shared standard that keeps project documentation honest, traceable, and reusable across different repo archetypes.
 
 ## Key outcomes
-
-The system must enable users to:
-
-1. write and protect the original idea;
-2. decompose the idea into systems and subsystems;
-3. document architecture decisions and rationale;
-4. create roadmaps, milestones and success criteria;
-5. generate small implementation tasks for AI agents;
-6. create context packages with only relevant documents;
-7. validate every task against original goals;
-8. audit existing projects for missing documentation and weak planning.
+- Repos can adopt a common IPS standard regardless of runtime or hub scope
+- The ecosystem preserves honest project ownership and validation evidence
+- Service repos remain the owners of their runtime responsibilities while standards remain centralized and reusable
 
 ## Non-goals
-
-The system is not primarily:
-
-- a generic task manager;
-- a replacement for Git;
-- a replacement for Jira;
-- a replacement for Confluence;
-- a code generator by itself;
-- a chat interface only.
-
-It may integrate with those systems, but its source of truth remains the file-based project knowledge repository.
+- Running a customer-facing runtime or application workload
+- Owning the business logic or operational runtime of service repos
+- Replacing service-level governance with a generic platform decision layer
 
 ## Success criteria
+- The IPS standard is adopted consistently across repo archetypes
+- The repo remains explicit that it is the standards and validation authority, not an application runtime
+- Validation and onboarding evidence stays clear and reviewable for the ecosystem
 
-The project is successful when:
-
-- every implementation task has a trace path to the vision;
-- every milestone has validation criteria;
-- every major technical decision has an ADR;
-- AI agents receive minimal but sufficient context;
-- documentation completeness can be audited automatically;
-- existing projects can be analyzed and improved;
-- concept drift can be detected and reported.
-
-## Product philosophy
-
-The system should prefer explicitness over hidden magic. It should make reasoning visible, durable and reviewable.
-
-## AI philosophy
-
-AI agents are powerful executors but unreliable custodians of long-term intent. Therefore, AI may assist with drafting, analysis and validation, but protected baseline documents must remain under human control.
+## Approval
+status: approved
+Approved by: project owner
+Approval evidence: owner-confirmation: intent-preservation-system-onboarding-approved

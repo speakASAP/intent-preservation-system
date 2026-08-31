@@ -1,105 +1,29 @@
-# Intent Preservation System agent instructions
+# Agents
 
-## Project identity
+## Required reading
+- `README.md`
+- `SYSTEM.md`
+- `BUSINESS.md`
+- `TASKS.md`
+- `docs/24_onboarding/PROJECT_ADOPTION_STANDARD.md`
+- `scripts/validate_adoption_profile.py`
+- `scripts/scaffold_project_adoption.py`
 
-Intent Preservation System is a documentation-first framework for AI-assisted project delivery. It preserves original project intent, decomposes it into bounded implementation units, generates context for AI agents, and validates work against upstream goals.
+## Authority
+This repository is the owner of the IPS standards, templates, schemas, and validation logic for the wider ecosystem. It provides the governance and onboarding framework, but it does not operate an application runtime.
 
-## Core governance
+## Intent preservation system
+This repo is the source-of-truth IPS implementation used to preserve project intent, validation evidence, and operational boundary clarity across service and hub repos.
 
-- The original vision is immutable for AI agents.
-- Do not modify `docs/00_constitution/CONSTITUTION.md` or `docs/01_vision/VISION.md`.
-- Human intent changes belong in `docs/01_vision/VISION_EVOLUTION.md`.
-- Preserve the chain:
+## Safety and operations
+- Keep the standard truthful about repo ownership boundaries and runtime scope.
+- Avoid inventing runtime capabilities or over-claiming service ownership in the ecosystem.
+- Prefer clear, reviewable governance changes and traceability updates over ad hoc repo-by-repo exceptions.
 
-```text
-Vision -> Goal Impact -> System -> Feature -> Task -> Execution Plan -> Coding Prompt -> Code -> Validation
-```
-
-## Before coding
-
-Verify that the task has:
-
-- Upstream traceability.
-- Goal impact mapping.
-- An execution plan that is approved or explicitly marked as draft work.
-- A context package, or enough source material to generate one.
-- Explicit validation criteria.
-- Applicable project invariants.
-- Sensitive-data classification.
-- Contract/schema and replay/determinism impact.
-- Required operational gates named.
-- Parallelizable goals or workstreams, blockers, serial dependencies, and integration ownership when the work can be split across agents.
-
-For DOS alignment work, read `docs/17_governance/SHARED_PRINCIPLES_WITH_DOS.md` and preserve the boundary that DOS is a reference project, not the IPS source of truth.
-
-## Planning for parallel agents
-
-When creating or refactoring plans, maximize safe parallel execution while preserving the project traceability chain:
-
-- Split work into independent goal workstreams that can be started by separate agents.
-- Mark each workstream as ready now, dependency-gated, blocked, or final integration.
-- State blockers explicitly, including the exact dependency, decision, credential, environment, file, or validation evidence that unblocks the workstream.
-- Give each parallel workstream its own allowed files, forbidden files, validation evidence, expected output, and handoff prompt.
-- Add an integration workstream when parallel agents touch shared behavior, shared files, contracts, schemas, gates, generated artifacts, or documentation indexes.
-- When thread-management tools are available, start each ready-now parallel workstream in a separate Codex thread so parallel plans are implemented in parallel instead of being serialized in one conversation.
-- Mark unknown blockers or dependencies with `[MISSING: ...]` or `[UNKNOWN: ...]` instead of inventing details.
-
-Do not serialize independent work without documenting the reason. Do not assign two agents to the same protected or contract-bearing artifact without a merge owner and conflict-resolution order.
-
-## Documentation gap behavior
-
-Follow:
-
-- `docs/23_documentation_contracts/DOCUMENTATION_COMPLETENESS_STANDARD.md`
-- `docs/23_documentation_contracts/AGENT_GAP_FILLING_RULES.md`
-
-Agents may add missing sections to mutable documents. If content cannot be inferred from approved sources, add `[MISSING: ...]` or `[UNKNOWN: ...]` markers instead of inventing details.
-
-## Derived artifact fidelity
-
-Summaries, ultra-summaries, generated prompts, context packages, and audit reports are derived artifacts. Preserve the source artifact's meaning.
-
-When editing semantic compression documents:
-
-- Read the full source document first.
-- Use only information present in the source document unless a separate section explicitly cites another linked source.
-- Keep summaries within limits defined in `docs/20_semantic_compression/SEMANTIC_COMPRESSION_GUIDE.md`.
-- Prefer fixing an incorrect audit rule over bloating compressed documents to satisfy an audit.
-- Mark compressed documents as `ai-draft` unless a human has reviewed fidelity.
-
-## Forbidden behavior
-
-Do not:
-
-- Invent business goals or approvals.
-- Remove traceability.
-- Change ADR decisions without creating a new ADR proposal.
-- Convert vague tasks directly into code.
-- Skip execution plans or validation.
-- Put secrets, raw production data, confidential identifiers, or real customer data into prompts, tests, examples, logs, screenshots, plans, or reports.
-- Modify files outside execution-plan scope without reporting the deviation.
-
-## Cross-agent automation standard
-
-Agents must also follow `docs/17_governance/CROSS_AGENT_AUTOMATION_STANDARD.md` when planning, automating, delegating, monitoring, or integrating work across repositories. Repositories adopting IPS should keep a repo-local `AGENT_OPERATIONS.md` or equivalent pointer so Codex, Claude Code, Copilot, Cursor, and other agents use the same operating model. Known out-of-scope validation failures must be tracked with the validation-debt ledger template in `docs/18_templates/VALIDATION_DEBT_LEDGER_TEMPLATE.md`.
-
-## Essential commands
-
-```bash
-python3 scripts/strict_doc_audit.py --format markdown --fail-on-issues
-python3 scripts/pre_coding_gate.py --root .
-python3 scripts/deployment_readiness_gate.py --root .
-```
-
-Run the narrowest relevant checks for the change. For governance, traceability, or deployment-readiness changes, run all three commands if the scripts are present and executable.
+## Project-specific rules
+- Do not describe this repo as a runtime service or product application.
+- Do not assign a service deployment or user-facing runtime boundary it does not own.
+- Maintain the standards and validator framework as a shared governance platform for the wider ecosystem.
 
 ## Required final report
-
-After completing work, report:
-
-- Files changed.
-- Documents created.
-- Missing sections filled.
-- Remaining `[MISSING: ...]` markers.
-- Validation evidence.
-- Deviations from plan.
+The final report must describe the repo’s role as the IPS standards and validation hub, list validation evidence, and clarify that service runtime ownership remains with the individual repos that run those workloads.
