@@ -43,7 +43,5 @@
     "followUps": [
       "Confirm whether future IPS standard work needs a new repo archetype for additional ecosystem governance patterns or runtime-service extensions."
     ]
-  },
-  "activeTask": "- complete IPS adoption profile for intent-preservation-system",
-  "status": "active"
+  }
 }
