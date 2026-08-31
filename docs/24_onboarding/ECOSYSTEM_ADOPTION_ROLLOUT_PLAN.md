@@ -59,72 +59,72 @@ or overwriting real existing content.
 
 ### Priority repos
 
-- [ ] logging-microservice — pending
-- [ ] notifications-microservice — pending
-- [ ] auth-microservice — pending
-- [ ] database-server — pending
-- [ ] vault-microservice — pending
-- [ ] k8s-manifests — pending
-- [ ] catalog-microservice — pending
+- [x] logging-microservice — done
+- [x] notifications-microservice — done
+- [x] auth-microservice — done
+- [x] database-server — done
+- [x] vault-microservice — done
+- [x] k8s-manifests — done
+- [x] catalog-microservice — done
 
 ### E-commerce backbone
 
-- [ ] warehouse-microservice — pending
-- [ ] suppliers-microservice — pending
-- [ ] orders-microservice — pending
-- [ ] invoices-microservice — pending
-- [ ] payments-microservice — pending
+- [x] warehouse-microservice — done
+- [x] suppliers-microservice — done
+- [x] orders-microservice — done
+- [x] invoices-microservice — done
+- [x] payments-microservice — done
 
 ### Infrastructure
 
-- [ ] backups-microservice — pending
-- [ ] docs-rag-microservice — pending
-- [ ] minio-microservice — pending
-- [ ] monitoring-microservice — pending
-- [ ] ai-microservice — pending
+- [x] backups-microservice — done
+- [x] docs-rag-microservice — done
+- [x] minio-microservice — done
+- [x] monitoring-microservice — done
+- [x] ai-microservice — done
 
 ### speakasap
 
-- [ ] speakasap — pending
-- [ ] speakasap-portal — pending (legacy Django, docs-only onboarding)
+- [x] speakasap — done
+- [x] speakasap-portal — done (legacy Django, docs-only onboarding)
 
 ### Business / apps / orchestration
 
-- [ ] agentic-email-processing-system — pending
-- [ ] business-process-control-plane — pending
-- [ ] leads-microservice — pending
-- [ ] marketing-microservice — pending
-- [ ] prompts-microservice — pending
-- [ ] shop-assistant — pending
-- [ ] school-committee — pending
-- [ ] candidate-blueprism — pending
-- [ ] cliplot — pending
-- [ ] chytrakoupe — pending
-- [ ] rent-a-box — pending
-- [ ] goalkeeper — pending
-- [ ] crypto-ai-agent — pending
-- [ ] flipflop — pending
-- [ ] growth — pending
-- [ ] marathon — pending
-- [ ] statex — pending
+- [x] agentic-email-processing-system — done
+- [x] business-process-control-plane — done
+- [x] leads-microservice — done
+- [x] marketing-microservice — done
+- [x] prompts-microservice — done
+- [x] shop-assistant — done
+- [x] school-committee — done
+- [x] candidate-blueprism — done
+- [x] cliplot — done
+- [x] chytrakoupe — done
+- [x] rent-a-box — done
+- [x] goalkeeper — done
+- [x] crypto-ai-agent — done
+- [x] flipflop — done
+- [x] growth — done
+- [x] marathon — done
+- [x] statex — done
 
 ### Marketplace integrations
 
-- [ ] allegro — pending
-- [ ] aukro — pending
-- [ ] bazos — pending
-- [ ] heureka — pending
+- [x] allegro — done
+- [x] aukro — done
+- [x] bazos — done
+- [x] heureka — done
 
 ### Hubs (no runtime)
 
-- [ ] shared — pending
-- [ ] vault — pending
-- [ ] intent-preservation-system — pending
+- [x] shared — done
+- [x] vault — done
+- [x] intent-preservation-system — done
 
 ### Low-priority (last)
 
-- [ ] statex-ecosystem — pending
-- [ ] domain-research — pending
+- [x] statex-ecosystem — done
+- [x] domain-research — done
 
 ## Notes
 
