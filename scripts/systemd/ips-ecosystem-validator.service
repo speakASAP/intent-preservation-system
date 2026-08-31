@@ -1,0 +1,31 @@
+[Unit]
+Description=Ecosystem-wide IPS adoption validator and STATE.json drift healer
+Documentation=file:///home/ssf/Documents/Github/intent-preservation-system/docs/24_onboarding/PROJECT_ADOPTION_STANDARD.md
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/ssf/Documents/Github
+ExecStart=/usr/bin/python3 /home/ssf/Documents/Github/intent-preservation-system/scripts/ecosystem_ips_healer.py
+
+# This is the USER instance (already runs as ssf), matching the statex-token-health
+# convention: StateDirectory resolves beneath $XDG_STATE_HOME (~/.local/state), which
+# ssf owns outright, so reports are never blocked by a root-owned directory.
+StateDirectory=ips-ecosystem-validator
+
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ssf/.local/bin
+
+# One repo's git commit or validator subprocess hanging must not wedge every future run.
+TimeoutStartSec=1800
+
+# Exit 1 means "one or more repos need human attention" (a successful, informative run,
+# not an operational fault) — mirrors the exit-code convention already used by
+# statex-token-health-failure.service. Only an uncaught exception (exit >1) is a real
+# operational failure worth a red unit.
+SuccessExitStatus=0 1
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ips-ecosystem-validator
+
+[Install]
+WantedBy=default.target

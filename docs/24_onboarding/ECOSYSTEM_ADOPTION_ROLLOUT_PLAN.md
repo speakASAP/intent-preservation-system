@@ -135,3 +135,48 @@ or overwriting real existing content.
   status is unrelated to documentation alignment.
 - Update this file's checkboxes as each repository is completed so the
   rollout is resumable across sessions.
+
+## Ongoing drift and the automated validator
+
+Rollout completion is not a one-time state: other concurrently-active automated
+sessions in this ecosystem (Wave0/Wave1 planning-standardization work, Goal
+orchestrator runs, etc.) periodically overwrite a repo's `STATE.json` with its
+own native schema, silently dropping the IPS-required top-level keys
+(`schemaVersion`, `project`, `lifecycle`, `health`, `activeTask`, `lastUpdated`,
+`deployment`, `blockers`, `followUps`). This was observed and repaired by hand
+in 9 repos during the initial rollout (`business-process-control-plane`,
+`backups-microservice`, `catalog-microservice`, `database-server`,
+`logging-microservice`, `notifications-microservice`, `payments-microservice`,
+`runlayer`, `bazos`).
+
+To keep the ecosystem aligned without repeating that manual repair work,
+`intent-preservation-system/scripts/ecosystem_ips_healer.py` runs daily as a
+rootless systemd user timer on `alfares`:
+
+- Iterates every repo flagged `ipsAdoptionRequired: true` in
+  `shared/config/ecosystem-repositories.json` and re-runs
+  `validate_adoption_profile.py --phase planning` against each.
+- If **every** reported error is the known STATE.json-missing-required-keys
+  drift pattern, it derives the missing values from the repo's own existing
+  native fields (never fabricating content) and commits the fix directly to
+  that repo's `main` (no push — deploy/post-commit hooks behave exactly as for
+  a manual commit).
+- Any other validator failure (missing doc sections, placeholders, broken
+  traceability, approval gaps) is left untouched and reported as
+  `needs-human` — those require judgment this script must not exercise.
+- Writes a run report to `~/.local/state/ips-ecosystem-validator/latest.md`
+  on the server (plus one timestamped file per run).
+
+Operational commands (run on `alfares`):
+
+```bash
+systemctl --user status ips-ecosystem-validator.timer      # confirm scheduled
+systemctl --user list-timers ips-ecosystem-validator.timer # next/last run
+systemctl --user start ips-ecosystem-validator.service     # trigger manually
+cat ~/.local/state/ips-ecosystem-validator/latest.md        # last report
+```
+
+Unit source and idempotent installer live in
+`intent-preservation-system/scripts/systemd/` (`ips-ecosystem-validator.service`,
+`ips-ecosystem-validator.timer`, `install.sh`); re-run `install.sh` to
+reinstall onto `~/.config/systemd/user/` if the live units are ever lost.

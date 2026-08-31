@@ -1,0 +1,18 @@
+[Unit]
+Description=Run the ecosystem-wide IPS adoption validator daily
+Documentation=file:///home/ssf/Documents/Github/intent-preservation-system/docs/24_onboarding/PROJECT_ADOPTION_STANDARD.md
+
+[Timer]
+# Daily is enough: the only auto-healed drift pattern (STATE.json schema overwrite) is
+# caused by other automated sessions' commits, which land at most a few times a day per
+# repo; anything needing a human is reported, not time-sensitive to catch within hours.
+OnCalendar=*-*-* 05:45:00
+
+# Spread so it does not land exactly with other scheduled jobs (token-health runs 07:15).
+RandomizedDelaySec=15min
+
+# Catch up after the host was off, consistent with the token-health timer.
+Persistent=true
+
+[Install]
+WantedBy=timers.target
