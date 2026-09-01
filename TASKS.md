@@ -8,10 +8,12 @@
 
 - review the IPS standard for repo archetype coverage and future adoption edge cases
 - consider whether additional validator guidance is required for low-priority or hub-only repos
+- Confirm whether future IPS standard work needs a new repo archetype for additional ecosystem governance patterns or runtime-service extensions.
 
 ## Blocked
 
 - no active blockers beyond keeping the standards-hub boundary explicit in all adoption artifacts
+- The repo must remain honest about not owning a runtime service or application deployment.
 
 ## Completed
 - IPS adoption profile scaffolded
