@@ -37,8 +37,12 @@ MARKER_EXCLUDED_PARTS = {
     "node_modules",
     "__pycache__",
     "reports",
-    "docs/18_templates",
 }
+
+# Repository-relative path prefixes. These cannot live in MARKER_EXCLUDED_PARTS:
+# that set is matched against individual path parts, so any value containing "/"
+# silently never matches.
+MARKER_EXCLUDED_PREFIXES = ("docs/18_templates",)
 
 
 def _utc_now() -> str:
@@ -71,6 +75,8 @@ def _missing_markers(root: Path) -> list[dict[str, Any]]:
         relative_path = path.relative_to(root)
         rel_parts = relative_path.parts
         if MARKER_EXCLUDED_PARTS.intersection(rel_parts):
+            continue
+        if is_gate_excluded(relative_path, MARKER_EXCLUDED_PREFIXES):
             continue
         if is_gate_excluded(relative_path, exclusions):
             continue
