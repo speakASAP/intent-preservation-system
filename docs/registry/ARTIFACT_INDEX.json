@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "repository": "intent-preservation-system",
-  "generated_at": "2026-08-30T21:27:06Z",
+  "generated_at": "2026-09-05T00:00:00Z",
   "artifacts": [
     {
       "id": "BUSINESS-ROOT",
@@ -13,6 +13,28 @@
         "VISION-BASELINE"
       ],
       "updated_at": "2026-08-30T21:27:06Z"
+    },
+    {
+      "id": "EP-TASK-001",
+      "type": "execution_plan",
+      "status": "done",
+      "title": "Bootstrap service",
+      "path": "docs/21_execution_plans/EP-TASK-001-bootstrap-service.md",
+      "parent_ids": [
+        "TASK-001"
+      ],
+      "updated_at": "2026-09-05T00:00:00Z"
+    },
+    {
+      "id": "GOAL-IMPACT-TASK-001",
+      "type": "goal",
+      "status": "validated",
+      "title": "Bootstrap service adoption profile",
+      "path": "docs/22_goal_impact/GOAL-IMPACT-TASK-001.md",
+      "parent_ids": [
+        "TASK-001"
+      ],
+      "updated_at": "2026-09-05T00:00:00Z"
     },
     {
       "id": "REPOSITORY-PROFILE",
@@ -37,6 +59,15 @@
       "updated_at": "2026-08-30T21:27:06Z"
     },
     {
+      "id": "TASK-001",
+      "type": "task",
+      "status": "validated",
+      "title": "Bootstrap service",
+      "path": "docs/11_tasks/TASK-001-bootstrap-service.md",
+      "parent_ids": [],
+      "updated_at": "2026-09-05T00:00:00Z"
+    },
+    {
       "id": "TASKS-ROOT",
       "type": "task",
       "status": "ready",
@@ -58,6 +89,17 @@
         "TASKS-ROOT"
       ],
       "updated_at": "2026-08-30T21:27:06Z"
+    },
+    {
+      "id": "VAL-TASK-001",
+      "type": "validation",
+      "status": "validated",
+      "title": "Bootstrap service validation",
+      "path": "docs/12_validation/VAL-TASK-001-bootstrap-service.md",
+      "parent_ids": [
+        "TASK-001"
+      ],
+      "updated_at": "2026-09-05T00:00:00Z"
     },
     {
       "id": "VISION-BASELINE",

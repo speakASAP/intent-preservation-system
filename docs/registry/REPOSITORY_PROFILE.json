@@ -14,11 +14,15 @@
     "STATE.json",
     "docs/00_constitution/CONSTITUTION.md",
     "docs/01_vision/VISION.md",
+    "docs/11_tasks/TASK-001-bootstrap-service.md",
     "docs/12_validation/VAL-2026-08-30-repository-profile-adoption.md",
+    "docs/12_validation/VAL-TASK-001-bootstrap-service.md",
     "docs/17_governance/CROSS_AGENT_AUTOMATION_STANDARD.md",
     "docs/17_governance/PROJECT_INVARIANTS.md",
-    "docs/registry/REPOSITORY_PROFILE.json",
-    "docs/registry/ARTIFACT_INDEX.json"
+    "docs/21_execution_plans/EP-TASK-001-bootstrap-service.md",
+    "docs/22_goal_impact/GOAL-IMPACT-TASK-001.md",
+    "docs/registry/ARTIFACT_INDEX.json",
+    "docs/registry/REPOSITORY_PROFILE.json"
   ],
   "excluded_path_patterns": [
     ".env*",
